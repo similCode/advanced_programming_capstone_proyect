@@ -11,7 +11,7 @@ namespace CarRental.Domain.Entities.Vehicle
 
         public TransmissionType TransmissionType { get; }
 
-        public int NumberVelocities { get; }
+        public int NumberOfVelocities { get; }
 
         public int TankCapacity { get; set; }
 
