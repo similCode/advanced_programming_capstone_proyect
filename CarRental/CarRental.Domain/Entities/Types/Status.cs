@@ -7,14 +7,14 @@ namespace CarRental.Domain.Entities.Types
     /// </summary>
     public enum Status
     {
-        requested,
+        Requested,
 
-        approved,
+        Approved,
 
-        payed,
+        Payed,
 
-        consumed,
+        Consumed,
 
-        cancelled
+        Cancelled
     }
 }

@@ -2,13 +2,16 @@
 
 using CarRental.Domain.Entities.Types;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
 namespace CarRental.Domain.Entities.Person
 {
+    /// <summary>
+    /// Modela la clase usuario.
+    /// </summary>
     public class Users : Person
     {
+        /// <summary>
+        /// Tipo de usuario
+        /// </summary>
         public UserRoleType Role { get; }
     }
 }

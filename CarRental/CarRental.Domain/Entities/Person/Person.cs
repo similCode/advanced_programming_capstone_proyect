@@ -4,7 +4,7 @@ using System;
 namespace CarRental.Domain.Entities.Person;
 
 /// <summary>
-/// Summary description for Class1
+/// Clase base persona.
 /// </summary>
 public abstract class Person : ICountry
 {
@@ -27,7 +27,13 @@ public abstract class Person : ICountry
 
     public string CountryName { get; }
 
+    /// <summary>
+    /// Correo electronico de la persona.
+    /// </summary>
     public string Email { get; }
 
+    /// <summary>
+    /// Numero de telefono de la persona.
+    /// </summary>
     public string Phone { get; set; }
 }

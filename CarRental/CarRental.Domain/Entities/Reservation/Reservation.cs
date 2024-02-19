@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace CarRental.Domain.Entities.Reservation
 {
+    /// <summary>
+    /// Modela la reservacion de un vehiculo.
+    /// </summary>
     public class Reservation
     {
         #region Properties
@@ -39,6 +42,9 @@ namespace CarRental.Domain.Entities.Reservation
         /// </summary>
         public Price TotalPrice => new Price(Vehicle.Price.Currency, Vehicle.Price.Value);
 
+        /// <summary>
+        /// Estado de la reservacion
+        /// </summary>
         public Status Status { get; set; }
 
         #endregion Properties
