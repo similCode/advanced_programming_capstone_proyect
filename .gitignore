@@ -1,0 +1,11 @@
+*.mdf
+<<<<<<< HEAD
+*.ldfgit 
+.vs
+CarRental/obj
+CarRental/bin
+CarRental/CarRental.Domain/obj
+CarRental/CarRental.Domain/bin
+=======
+*.ldf
+>>>>>>> f179807aba73de132addfbe03f727a276bbb54bb

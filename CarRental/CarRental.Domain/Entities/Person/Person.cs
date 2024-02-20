@@ -30,10 +30,30 @@ public abstract class Person : ICountry
     /// <summary>
     /// Correo electronico de la persona.
     /// </summary>
-    public string Email { get; }
+    private string Email { get; set; }
 
     /// <summary>
     /// Numero de telefono de la persona.
     /// </summary>
     public string Phone { get; set; }
+
+    /// <summary>
+    /// Constructor por default
+    /// </summary>
+    protected Person()
+    { }
+
+    /// <summary>
+    /// Constructor por parametros
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="lastName"></param>
+    /// <param name="iD"></param>
+    public Person(string name, string lastName, string iD, string countryName)
+    {
+        Name = name;
+        LastName = lastName;
+        ID = iD;
+        CountryName = countryName;
+    }
 }

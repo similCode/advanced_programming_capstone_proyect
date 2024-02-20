@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarRental.Domain.Entities.Vehicle
+namespace CarRental.Domain.Entities.Vehicles
 {
     /// <summary>
     /// Clase base para los vehículos del negocio
@@ -17,8 +17,14 @@ namespace CarRental.Domain.Entities.Vehicle
     {
         #region Properties
 
+        /// <summary>
+        /// Modelo del vehiculo
+        /// </summary>
         public string Model { get; }
 
+        /// <summary>
+        /// Capacidad de pasajeros
+        /// </summary>
         public int PassengerCapacity { get; }
 
         /// <summary>
@@ -31,9 +37,24 @@ namespace CarRental.Domain.Entities.Vehicle
         /// </summary>
         public Color Color { get; set; }
 
+        /// <summary>
+        /// Cantidad de ruedas
+        /// </summary>
         public int WheelAmount { get; }
 
+        /// <summary>
+        /// Peso
+        /// </summary>
         public int Weight { get; }
+
+        /// <summary>
+        /// Constructor por default
+        /// </summary>
+        protected Vehicle()
+        { }
+
+        public Vehicle(string Model)
+        { }
 
         #endregion Properties
     }
