@@ -1,0 +1,7 @@
+*.mdf
+*.ldfgit 
+.vs
+CarRental/obj
+CarRental/bin
+CarRental/CarRental.Domain/obj
+CarRental/CarRental.Domain/bin

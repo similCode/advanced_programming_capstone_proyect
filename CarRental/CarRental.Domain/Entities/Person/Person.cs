@@ -1,31 +1,34 @@
 ﻿using CarRental.Domain.Abstract
 using System;
-namespace CarRental.Domain.Entities.Person;
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public abstract class Person : Icountry
+namespace CarRental.Domain.Entities.Person
 {
     /// <summary>
-    /// Nombre de la persona.
+    /// Summary description for Class1
     /// </summary>
-    public string name { get; }
+    public abstract class Person : Icountry
+    {
+        /// <summary>
+        /// Nombre de la persona.
+        /// </summary>
+        public string Name { get; }
 
-    public string lastName { get; }
+        public string LastName { get; }
 
-    /// <summary>
-    /// Edad de la persona.
-    /// </summary>
-    public int age { get; }
+        /// <summary>
+        /// Edad de la persona.
+        /// </summary>
+        public int Age { get; }
 
-    /// <summary>
-    /// Identificador de la persona.
-    /// </summary>
-    public string ID { get; }
+        /// <summary>
+        /// Identificador de la persona.
+        /// </summary>
+        public string ID { get; }
 
-    public string countryName { get; }
+        public string CountryName { get; }
 
-    public string email { get; }
+        public string Email { get; }
 
-    public string phone { get; set; }
+        public string Phone { get; set; }
+    }
 }
+

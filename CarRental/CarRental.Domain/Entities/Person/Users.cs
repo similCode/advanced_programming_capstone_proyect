@@ -5,6 +5,6 @@ namespace CarRental.Domain.Entities.Person
 /// </summary>
 public class Users : Person
 {
-    public UserRoleType role { get; }
+    public UserRoleType Role { get; }
 
 }

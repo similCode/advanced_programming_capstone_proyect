@@ -2,6 +2,7 @@
 using CarRental.Domain.Entities.Common;
 using CarRental.Domain.Entities.Vehicle;
 using CarRental.Domain.Entities.Types;
+using CarRental.Domain.Entities.Suplement
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,29 +18,31 @@ namespace CarRental.Domain.Entities.Reservation
         /// <summary>
         /// Cliente que realizó la renta.
         /// </summary>
-        public Client client { get; }
+        public Client Client { get; }
 
         /// <summary>
         /// Vehículo a rentar.
         /// </summary>
-        public Vehicle vehicle { get; }
+        public Vehicle Vehicle { get; }
 
         /// <summary>
         /// Fecha de inicio de la renta.
         /// </summary>
-        public DateTime startDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         /// <summary>
         /// Fecha de finalizada la renta.
         /// </summary>
-        public DateTime endDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         /// <summary>
         /// Precio total a pagar por la orden.
         /// </summary>
-        public Price totalPrice => new Price(Vehicle.Price.Currency, Vehicle.Price.Value);
+        public Price TotalPrice {  get; set; }
 
-        public Status status {  get; set; }
+        public Status Status {  get; set; }
+
+        public Suplement Suplements { get; set; }
 
         #endregion Properties
 
