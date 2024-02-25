@@ -9,16 +9,18 @@ namespace CarRental.Domain.Entities.Types
     /// <summary>
     /// Fuentes de energía utilizada por los vehículos.
     /// </summary>
-    public enum EnergyType
+    public enum EngineType
     {
         /// <summary>
         /// Gasolina como fuente de energía.
         /// </summary>
-        Electrical,
+        Electric,
 
         /// <summary>
         /// Petróleo como fuente de energía.
         /// </summary>
-        InternalCombustion,
+        oil,
+
+        gasoline
     }
 }

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-Circulation",
+      "appliesTo": "CarRental/CarRental.Domain/Entities/Circulation/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tarea-Circulation",
+      "appliesTo": "CarRental/CarRental.Domain/Entities/Circulation/Circulation.cs",
+      "type": "launch"
+    }
+  ]
+}

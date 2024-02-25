@@ -12,5 +12,5 @@ namespace CarRental.Domain.Entities.Person;
 /// </summary>
 public class Client : Person
 {
-    public Reservation[] reservations { get; set; }
+    public List<Reservation> Reservations { get; set; }
 }

@@ -5,19 +5,16 @@ namespace CarRental.Domain.Enities.Vehicle
 {
     public class Car : Vehicle
     {
-        public int doorsAmount { get; }
 
-        public bool hasAirConditioning { get; set; }
+        public bool HasAirConditioning { get; set; }
 
-        public TransmissionType transmissionType { get; }
+        public TransmissionType TransmissionType { get; set;  }
 
-        public int numberVelocities { get; }
+        public int VelocitiesAmount { get; }
 
-        public int tankCapacity { get; set; }
+        public int TankCapacity { get; set; }
 
-        public int maxVelocity { get; }
-
-        public EnergyType EnergyType { get; }
+        
     }
 }
 
