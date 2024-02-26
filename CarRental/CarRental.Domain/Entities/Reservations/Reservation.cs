@@ -1,15 +1,14 @@
-﻿using CarRental.Domain.Entities.Person;
+﻿using CarRental.Domain.Entities.Persons;
 using CarRental.Domain.Entities.Common;
-using CarRental.Domain.Entities.Vehicles;
+
 using CarRental.Domain.Entities.Types;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CarRental.Domain.Entities.Vehicles;
+
+using CarRental.Domain.Entities.Suplements;
+
 using CarRental.Domain.Abstract;
 
-namespace CarRental.Domain.Entities.Reservation
+namespace CarRental.Domain.Entities.Reservations
 {
     /// <summary>
     /// Modela la reservacion de un vehiculo.
@@ -19,6 +18,8 @@ namespace CarRental.Domain.Entities.Reservation
         #region Properties
 
         public string CountryName { get; set; }
+
+        #region Properties
 
         /// <summary>
         /// Cliente que realizó la renta.
@@ -62,6 +63,8 @@ namespace CarRental.Domain.Entities.Reservation
             TotalPrice = totalPrice;
             Status = status;
         }
+
+        public Suplement Suplements { get; set; }
 
         #endregion Properties
     }

@@ -1,14 +1,15 @@
 ﻿using System;
 
-namespace CarRental.Domain.Abstract;
-
-/// <summary>
-/// Interfase con nombre del pais.
-/// </summary>
-public interface ICountry
+namespace CarRental.Domain.Abstract
 {
     /// <summary>
-    /// Nombre del pais de procedencia
+    /// Interfase con nombre del pais.
     /// </summary>
-    public string CountryName { get; }
+    public interface ICountry
+    {
+        /// <summary>
+        /// Nombre del pais de procedencia
+        /// </summary>
+        public string CountryName { get; }
+    }
 }
