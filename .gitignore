@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/advanced_programming_capstone_proyect/FileContentIndex
+/.vs/advanced_programming_capstone_proyect/v17/.wsuo
+/.vs/slnx.sqlite
