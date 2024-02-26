@@ -10,9 +10,9 @@ namespace CarRental.Domain.Entities.Vehicles
     internal class ElectricalCar : Car
     {
         /// <summary>
-        /// Arreglo de estaciones de carga cercanas
+        /// Capacidad de la bateria
         /// </summary>
-        private ChargingStation[] NearbyChargingStations { get; set; }
+        private string BatteryCapacity { get; set; }
 
         /// <summary>
         /// Constructor por defecto
@@ -23,9 +23,9 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <summary>
         /// Constructor por parametros
         /// </summary>
-        /// <param name="nearbyChargingStations"></param>
-        public ElectricalCar(int doorsAmount, TransmissionType transmissionType, int numberOfVelocities, int maxVelocity, ChargingStation[] nearbyChargingStations) : base(doorsAmount, numberOfVelocities, maxVelocity)
+        public ElectricalCar(int doorsAmount, TransmissionType transmissionType, int numberOfVelocities, int maxVelocity, string batteryCapacity) : base(doorsAmount, numberOfVelocities, maxVelocity)
         {
+            BatteryCapacity = batteryCapacity;
         }
     }
 }

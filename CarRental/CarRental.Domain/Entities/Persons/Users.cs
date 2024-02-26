@@ -2,7 +2,7 @@
 
 using CarRental.Domain.Entities.Types;
 
-namespace CarRental.Domain.Entities.Person
+namespace CarRental.Domain.Entities.Persons
 {
     /// <summary>
     /// Modela la clase usuario que puede ser

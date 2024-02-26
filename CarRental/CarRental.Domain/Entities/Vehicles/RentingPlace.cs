@@ -12,29 +12,19 @@ namespace CarRental.Domain.Entities.Vehicles
     internal class RentingPlace
     {
         /// <summary>
-        /// Arreglo de estaciones de carga cercanas
-        /// </summary>
-        private ChargingStation[] NearbyChargingStations { get; }
-
-        /// <summary>
         /// Municipalidad
         /// </summary>
         private string Municipality { get; }
 
         /// <summary>
-        /// Arreglo de autos en el local
+        /// Lista de autos en el local
         /// </summary>
-        private Car[] Cars { get; }
+        public List<Car> Cars { get; set; }
 
         /// <summary>
-        /// Arreglo de bicicletas en el local
+        /// Lista de bicicletas en el local
         /// </summary>
-        private Cycle[] Cycles { get; }
-
-        /// <summary>
-        /// Atributo que dice si el local tiene estacion de carga o no
-        /// </summary>
-        private bool HasChargingStation { get; }
+        public List<Bicycle> Bicycles { get; set; }
 
         /// <summary>
         /// Constructor por parametros
@@ -47,13 +37,11 @@ namespace CarRental.Domain.Entities.Vehicles
         protected RentingPlace()
         { }
 
-        public RentingPlace(string municipality, Car[] cars, Cycle[] cycles, bool hasChargingStation, ChargingStation[] nearbyChargingStations)
+        public RentingPlace(string municipality, List<Car> cars, List<Bicycle> cycles)
         {
             Municipality = municipality;
             Cars = cars;
-            Cycles = cycles;
-            HasChargingStation = hasChargingStation;
-            NearbyChargingStations = nearbyChargingStations;
+            Bicycles = cycles;
         }
     }
 }

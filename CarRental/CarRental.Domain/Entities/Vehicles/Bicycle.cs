@@ -6,17 +6,17 @@ namespace CarRental.Domain.Entities.Vehicles
     /// <summary>
     /// Esta clase modela una bicicleta
     /// </summary>
-    public class Cycle : Vehicle
+    public class Bicycle : Vehicle
     {
         /// <summary>
         /// Tipo de bicicleta
         /// </summary>
         public CycleType Type { get; }
 
-        public Cycle()
+        public Bicycle()
         { }
 
-        protected Cycle(CycleType type)
+        protected Bicycle(CycleType type)
         { Type = type; }
     }
 }

@@ -1,15 +1,14 @@
-﻿using CarRental.Domain.Entities.Person;
+﻿using CarRental.Domain.Entities.Persons;
 using CarRental.Domain.Entities.Common;
-using CarRental.Domain.Entities.Vehicles;
+
 using CarRental.Domain.Entities.Types;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CarRental.Domain.Entities.Vehicles;
+
+using CarRental.Domain.Entities.Suplements;
+
 using CarRental.Domain.Abstract;
 
-namespace CarRental.Domain.Entities.Reservation
+namespace CarRental.Domain.Entities.Reservations
 {
     /// <summary>
     /// Modela la reservacion de un vehiculo.
@@ -50,9 +49,23 @@ namespace CarRental.Domain.Entities.Reservation
         /// </summary>
         public Status Status { get; set; }
 
+        #endregion Properties
+
+        /// <summary>
+        /// Constructor requerido por Entity Framework
+        /// </summary>
         protected Reservation()
         { }
 
+        /// <summary>
+        /// Constructor por parametros
+        /// </summary>
+        /// <param name="countryName"></param>
+        /// <param name="client"></param>
+        /// <param name="vehicle"></param>
+        /// <param name="startDate"></param>
+        /// <param name="totalPrice"></param>
+        /// <param name="status"></param>
         public Reservation(string countryName, Client client, Vehicle vehicle, DateTime startDate, Price totalPrice, Status status)
         {
             CountryName = countryName;
@@ -63,6 +76,6 @@ namespace CarRental.Domain.Entities.Reservation
             Status = status;
         }
 
-        #endregion Properties
+        public Suplement Supplements { get; set; }
     }
 }

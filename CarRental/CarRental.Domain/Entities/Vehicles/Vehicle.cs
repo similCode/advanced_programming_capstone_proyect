@@ -48,13 +48,29 @@ namespace CarRental.Domain.Entities.Vehicles
         public int Weight { get; }
 
         /// <summary>
-        /// Constructor por default
+        /// Constructor requerido por Entity Framework
         /// </summary>
         protected Vehicle()
         { }
 
-        public Vehicle(string Model)
-        { }
+        /// <summary>
+        /// Constructor por parametros
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="passengerCapacity"></param>
+        /// <param name="price"></param>
+        /// <param name="color"></param>
+        /// <param name="wheelAmount"></param>
+        /// <param name="wheight"></param>
+        public Vehicle(string model, int passengerCapacity, Price price, Color color, int wheelAmount, int wheight)
+        {
+            Model = model;
+            PassengerCapacity = passengerCapacity;
+            Price = price;
+            Color = color;
+            WheelAmount = wheelAmount;
+            Weight = wheight;
+        }
 
         #endregion Properties
     }

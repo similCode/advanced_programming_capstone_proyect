@@ -10,11 +10,6 @@ namespace CarRental.Domain.Entities.Vehicles
     internal class CombustionCar : Car
     {
         /// <summary>
-        /// Arreglo de estaciones de gasolina cercanas
-        /// </summary>
-        private GasolineStations[] NearbyGasolineStations { get; set; }
-
-        /// <summary>
         /// Capacidad del tanque
         /// </summary>
         private int TankCapacity { get; set; }
@@ -39,7 +34,7 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <param name="tankCapacity">Capacidad del tanque</param>
         /// <param name="maxVelocity">Maxima Velocidad</param>
         /// <param name=""></param>
-        public CombustionCar(int doorsAmount, TransmissionType transmissionType, int numberOfVelocities, int tankCapacity, int maxVelocity, GasolineStations[] nearbyGasolineStations) : base(doorsAmount, numberOfVelocities, maxVelocity)
+        public CombustionCar(int doorsAmount, TransmissionType transmissionType, int numberOfVelocities, int tankCapacity, int maxVelocity) : base(doorsAmount, numberOfVelocities, maxVelocity)
         {
             TransmissionType = transmissionType;
         }
