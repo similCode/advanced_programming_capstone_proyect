@@ -12,7 +12,7 @@ namespace CarRental.Domain.Entities.Vehicles
     internal class RentingPlace
     {
         /// <summary>
-        /// Municipalidad
+        /// Municipalidad del local de renta
         /// </summary>
         private string Municipality { get; }
 
@@ -27,16 +27,17 @@ namespace CarRental.Domain.Entities.Vehicles
         public List<Bicycle> Bicycles { get; set; }
 
         /// <summary>
+        /// Constructor requerido por Entity Framework
+        /// </summary>
+        protected RentingPlace()
+        { }
+
+        /// <summary>
         /// Constructor por parametros
         /// </summary>
         /// <param name="municipality"></param>
         /// <param name="cars"></param>
         /// <param name="cycles"></param>
-        /// <param name="hasChargingStation"></param>
-        /// <param name="nearbyChargingStations"></param>
-        protected RentingPlace()
-        { }
-
         public RentingPlace(string municipality, List<Car> cars, List<Bicycle> cycles)
         {
             Municipality = municipality;

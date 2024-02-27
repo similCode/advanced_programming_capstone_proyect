@@ -43,7 +43,7 @@ namespace CarRental.Domain.Entities.Vehicles
         public int WheelAmount { get; }
 
         /// <summary>
-        /// Peso
+        /// Peso del vehiculo
         /// </summary>
         public int Weight { get; }
 
@@ -61,15 +61,15 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <param name="price"></param>
         /// <param name="color"></param>
         /// <param name="wheelAmount"></param>
-        /// <param name="wheight"></param>
-        public Vehicle(string model, int passengerCapacity, Price price, Color color, int wheelAmount, int wheight)
+        /// <param name="weight"></param>
+        public Vehicle(string model, int passengerCapacity, Price price, Color color, int wheelAmount, int weight)
         {
             Model = model;
             PassengerCapacity = passengerCapacity;
             Price = price;
             Color = color;
             WheelAmount = wheelAmount;
-            Weight = wheight;
+            Weight = weight;
         }
 
         #endregion Properties

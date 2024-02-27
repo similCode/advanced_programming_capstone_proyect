@@ -3,7 +3,7 @@
 namespace CarRental.Domain.Entities.Vehicles
 {
     /// <summary>
-    /// Esta clase modela un carro
+    /// Clase base de un carro
     /// </summary>
     public abstract class Car : Vehicle
     {
@@ -23,12 +23,12 @@ namespace CarRental.Domain.Entities.Vehicles
         public int NumberOfVelocities { get; }
 
         /// <summary>
-        /// Maxima velocidad de acuerdo al fabricante
+        /// Maxima velocidad garantizada por el fabricante
         /// </summary>
         public int MaxVelocity { get; }
 
         /// <summary>
-        /// Constructor por default
+        /// Constructor requerido por Entity Framework
         /// </summary>
 
         protected Car()

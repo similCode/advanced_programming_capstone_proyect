@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace CarRental.Domain.Entities.Vehicles
 {
+    /// <summary>
+    /// Esta clase modela un carro de combustion
+    /// </summary>
     internal class CombustionCar : Car
     {
         /// <summary>
@@ -20,7 +23,7 @@ namespace CarRental.Domain.Entities.Vehicles
         public TransmissionType TransmissionType { get; }
 
         /// <summary>
-        /// Constructor por defecto
+        /// Constructor requerido por Entity Framework
         /// </summary>
         protected CombustionCar()
         { }

@@ -13,9 +13,16 @@ namespace CarRental.Domain.Entities.Vehicles
         /// </summary>
         public CycleType Type { get; }
 
-        public Bicycle()
+        /// <summary>
+        /// Constructor requerido por Entity Framework
+        /// </summary>
+        protected Bicycle()
         { }
 
+        /// <summary>
+        /// Constructor por parametros
+        /// </summary>
+        /// <param name="type"></param>
         protected Bicycle(CycleType type)
         { Type = type; }
     }

@@ -4,7 +4,7 @@ using CarRental.Domain.Entities.Common;
 using CarRental.Domain.Entities.Types;
 using CarRental.Domain.Entities.Vehicles;
 
-using CarRental.Domain.Entities.Suplements;
+using CarRental.Domain.Entities.CarSupplements;
 
 using CarRental.Domain.Abstract;
 
@@ -49,8 +49,6 @@ namespace CarRental.Domain.Entities.Reservations
         /// </summary>
         public Status Status { get; set; }
 
-        #endregion Properties
-
         /// <summary>
         /// Constructor requerido por Entity Framework
         /// </summary>
@@ -76,6 +74,8 @@ namespace CarRental.Domain.Entities.Reservations
             Status = status;
         }
 
-        public Suplement Supplements { get; set; }
+        public CarSupplement Supplements { get; set; }
+
+        #endregion Properties
     }
 }

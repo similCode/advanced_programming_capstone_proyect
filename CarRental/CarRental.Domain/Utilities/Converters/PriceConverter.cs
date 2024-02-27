@@ -68,7 +68,6 @@ namespace CarRental.Domain.Utilities.Converters
             };
         }
 
-        #endregion
-
+        #endregion Helpers
     }
 }
