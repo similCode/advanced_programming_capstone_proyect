@@ -19,6 +19,8 @@ namespace CarRental.Domain.Entities.Reservations
 
         public string CountryName { get; set; }
 
+        #region Properties
+
         /// <summary>
         /// Cliente que realizó la renta.
         /// </summary>
@@ -77,5 +79,7 @@ namespace CarRental.Domain.Entities.Reservations
         }
 
         public Suplement Supplements { get; set; }
+
+        #endregion Properties
     }
 }

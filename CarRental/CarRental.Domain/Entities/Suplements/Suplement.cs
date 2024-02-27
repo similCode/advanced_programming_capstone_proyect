@@ -8,13 +8,23 @@ namespace CarRental.Domain.Entities.Suplements
     /// </summary>
     public class Suplement
     {
+        /// <summary>
+        /// Precio del suplemento
+        /// </summary>
         public Price Price { get; set; }
 
         public string Description { get; set; }
 
+        /// <summary>
+        /// Constructor requerido por  Entity Framework
+        /// </summary>
         protected Suplement()
         { }
 
+        /// <summary>
+        /// Constructor por parametros
+        /// </summary>
+        /// <param name="price"></param>
         public Suplement(Price price)
         {
             Price = price;
