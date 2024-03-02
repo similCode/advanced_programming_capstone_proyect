@@ -30,21 +30,23 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <summary>
         /// Constructor requerido por Entity Framework
         /// </summary>
-
         protected Car()
         { }
-
         /// <summary>
         /// Constructor por parametros
         /// </summary>
         /// <param name="doorsAmount"></param>
         /// <param name="numberOfVelocities"></param>
         /// <param name="maxVelocity"></param>
-        public Car(int doorsAmount, int numberOfVelocities, int maxVelocity)
+        /// <param name="hasAirConditioning"></param>
+        public Car(int doorsAmount, int numberOfVelocities, int maxVelocity, bool hasAirConditioning)
         {
             DoorsAmount = doorsAmount;
             NumberOfVelocities = numberOfVelocities;
             MaxVelocity = maxVelocity;
+            HasAirConditioning = hasAirConditioning;
         }
+
+
     }
 }

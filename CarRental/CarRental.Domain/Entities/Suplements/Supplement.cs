@@ -1,12 +1,12 @@
 ﻿using System;
 using CarRental.Domain.Entities.Common;
 
-namespace CarRental.Domain.Entities.CarSupplements
+namespace CarRental.Domain.Entities.Supplements
 {
     /// <summary>
     /// Modela el suplemento de un auto
     /// </summary>
-    public class CarSupplement
+    public class Supplement
     {
         /// <summary>
         /// Precio del suplemento
@@ -21,16 +21,17 @@ namespace CarRental.Domain.Entities.CarSupplements
         /// <summary>
         /// Constructor requerido por  Entity Framework
         /// </summary>
-        protected CarSupplement()
+        protected Supplement()
         { }
 
         /// <summary>
         /// Constructor por parametros
         /// </summary>
         /// <param name="price"></param>
-        public CarSupplement(Price price)
+        public Supplement(Price price, string description)
         {
             Price = price;
+            Description = description;
         }
     }
 }

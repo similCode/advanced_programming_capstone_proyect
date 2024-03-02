@@ -4,7 +4,7 @@ using CarRental.Domain.Entities.Common;
 using CarRental.Domain.Entities.Types;
 using CarRental.Domain.Entities.Vehicles;
 
-using CarRental.Domain.Entities.CarSupplements;
+using CarRental.Domain.Entities.Supplements;
 
 using CarRental.Domain.Abstract;
 
@@ -49,6 +49,8 @@ namespace CarRental.Domain.Entities.Reservations
         /// </summary>
         public Status Status { get; set; }
 
+        public Supplement ReservationSupplement { get; set; }
+
         /// <summary>
         /// Constructor requerido por Entity Framework
         /// </summary>
@@ -64,7 +66,8 @@ namespace CarRental.Domain.Entities.Reservations
         /// <param name="startDate"></param>
         /// <param name="totalPrice"></param>
         /// <param name="status"></param>
-        public Reservation(string countryName, Client client, Vehicle vehicle, DateTime startDate, Price totalPrice, Status status)
+        /// <param name="reservationSupplement"></param>
+        public Reservation(string countryName, Client client, Vehicle vehicle, DateTime startDate, Price totalPrice, Status status, Supplement reservationSupplement)
         {
             CountryName = countryName;
             Client = client;
@@ -72,9 +75,10 @@ namespace CarRental.Domain.Entities.Reservations
             StartDate = startDate;
             TotalPrice = totalPrice;
             Status = status;
+            ReservationSupplement = reservationSupplement
         }
 
-        public CarSupplement Supplements { get; set; }
+        public Supplement Supplements { get; set; }
 
         #endregion Properties
     }
