@@ -1,6 +1,7 @@
 ﻿using CarRental.Domain.Abstract;
 using CarRental.Domain.Entities.Common;
 using CarRental.Domain.Entities.Types;
+using CarRental.Domain.Entiies.Circulation
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -13,10 +14,9 @@ namespace CarRental.Domain.Entities.Vehicle
     /// <summary>
     /// Clase base para los vehículos del negocio
     /// </summary>
-    public abstract class Vehicle
+    public abstract class Vehicle : ITransportable
     {
         #region Properties
-        public string model { get; }
 
         public int PassengerCapacity { get; }
 
@@ -33,6 +33,12 @@ namespace CarRental.Domain.Entities.Vehicle
         public int whellAmount { get; }
 
         public int weigth { get; }
+
+        public int MaxVelocity { get; }
+
+        public string audioSystem { get; set; }
+
+        public Circulation Circulation { get; }
 
         #endregion Properties
     }
