@@ -21,10 +21,7 @@ D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_p
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\DataAccess\obj\Debug\net6.0\CarRental.DataAccess.pdb
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\DataAccess\obj\Debug\net6.0\CarRental.DataAccess.genruntimeconfig.cache
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\DataAccess\obj\Debug\net6.0\ref\CarRental.DataAccess.dll
-D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.deps.json
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.runtimeconfig.json
-D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.dll
-D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.pdb
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.Domain.dll
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.Domain.pdb
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.csproj.AssemblyReference.cache
@@ -34,15 +31,26 @@ D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_p
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.AssemblyInfo.cs
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.csproj.CoreCompileInputs.cache
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.sourcelink.json
-<<<<<<< Updated upstream
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.dll
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\refint\CarRental.DataAccess.dll
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.pdb
-=======
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.csproj.CopyComplete
-D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.dll
-D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\refint\CarRental.DataAccess.dll
-D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.pdb
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.genruntimeconfig.cache
->>>>>>> Stashed changes
 D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\ref\CarRental.DataAccess.dll
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.deps.json
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.runtimeconfig.json
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.dll
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.DataAccess.pdb
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.Domain.dll
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\bin\Debug\net6.0\CarRental.Domain.pdb
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.csproj.AssemblyReference.cache
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.AssemblyInfoInputs.cache
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.AssemblyInfo.cs
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.csproj.CoreCompileInputs.cache
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.csproj.CopyComplete
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.dll
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\refint\CarRental.DataAccess.dll
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.pdb
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.genruntimeconfig.cache
+D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\ref\CarRental.DataAccess.dll

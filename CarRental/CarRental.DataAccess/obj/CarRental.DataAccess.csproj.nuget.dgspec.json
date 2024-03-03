@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj": {}
+    "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj": {
+    "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj",
+        "projectUniqueName": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj",
         "projectName": "CarRental.DataAccess",
-        "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\CD\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\obj\\",
+        "projectPath": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj": {
-                "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj"
+              "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj": {
+                "projectPath": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj"
               }
             }
           }
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite.Core": {
               "target": "Package",
               "version": "[6.0.27, )"
@@ -61,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,21 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj": {
+    "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj",
+        "projectUniqueName": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj",
         "projectName": "CarRental.Domain",
-        "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj",
-        "packagesPath": "C:\\Users\\CD\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\obj\\",
+        "projectPath": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\CarRental.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Programación\\Proyectos VS\\AdvancePro-GitHub\\similCode\\advanced_programming_capstone_proyect\\CarRental\\CarRental.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,6 +114,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite.Core": {
               "target": "Package",
               "version": "[6.0.27, )"
@@ -128,8 +135,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -138,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
