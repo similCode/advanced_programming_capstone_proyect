@@ -1,4 +1,5 @@
 using CarRental.Domain.Abstract;
+using CarRental.Domain.Entities.Common;
 using System;
 
 namespace CarRental.Domain.Entities.Persons
@@ -6,13 +7,16 @@ namespace CarRental.Domain.Entities.Persons
     /// <summary>
     /// Clase base persona.
     /// </summary>
-    public abstract class Person : ICountry
+    public abstract class Person : Entity, ICountry
     {
         /// <summary>
         /// Nombre de la persona.
         /// </summary>
         public string Name { get; }
 
+        /// <summary>
+        /// Apellido de la persona
+        /// </summary>
         public string LastName { get; }
 
         /// <summary>

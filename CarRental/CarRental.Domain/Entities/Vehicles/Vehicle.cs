@@ -1,7 +1,10 @@
 ﻿using CarRental.Domain.Abstract;
 using CarRental.Domain.Entities.Common;
 using CarRental.Domain.Entities.Types;
-using CarRental.Domain.Abstract.ITransportable
+using CarRental.Domain.Entities.Somatons;
+using CarRental.Domain.Entities.Insurances;
+using CarRental.Domain.Entities.Circulations;
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -14,57 +17,35 @@ namespace CarRental.Domain.Entities.Vehicles
     /// <summary>
     /// Clase base para los vehículos del negocio
     /// </summary>
-    public abstract class Vehicle : ITransportable
+    public abstract class Vehicle : Entity, ITransportable
     {
         #region Properties
 
         /// <summary>
-        /// Nombre de la marca del vehículo.
+        /// Circulacion del vehiculo
         /// </summary>
+        public Circulation Circulation { get; set; }
+
         public string BrandName { get; }
 
-        /// <summary>
-        /// Fecha de fabricación del vehículo.
-        /// </summary>
         public DateTime FabricationDate { get; }
 
-        /// <summary>
-        /// Número de placa del vehículo.
-        /// </summary>
         public string Plate { get; }
 
-        /// <summary>
-        /// Número de motor del vehículo.
-        /// </summary>
         public string MotorNumber { get; }
 
-        /// <summary>
-        /// Color principal del vehículo.
-        /// </summary>
         public Color Color { get; set; }
 
-        /// <summary>
-        /// Color secundario del vehículo.
-        /// </summary>
-        public Color Color2 { get; set; }
+        public Color? Color2 { get; set; }
 
-        /// <summary>
-        /// Información del seguro asociado al vehículo.
-        /// </summary>
         public Insurance Insurance { get; }
 
-        /// <summary>
-        /// Información del somaton del vehículo.
-        /// </summary>
         public Somaton Somaton { get; }
 
-        /// <summary>
-        /// Modelo del vehiculo
-        /// </summary>
         public string Model { get; }
 
         /// <summary>
-        /// Capacidad de pasajeros
+        /// Capacidad de pasajeros del vehiculo
         /// </summary>
         public int PassengerCapacity { get; }
 

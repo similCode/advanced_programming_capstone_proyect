@@ -13,7 +13,7 @@ namespace CarRental.Domain.Entities.Reservations
     /// <summary>
     /// Modela la reservacion de un vehiculo.
     /// </summary>
-    public class Reservation : ICountry
+    public class Reservation : Entity, ICountry
     {
         #region Properties
 
@@ -75,9 +75,12 @@ namespace CarRental.Domain.Entities.Reservations
             StartDate = startDate;
             TotalPrice = totalPrice;
             Status = status;
-            ReservationSupplement = reservationSupplement
+            ReservationSupplement = reservationSupplement;
         }
 
+        /// <summary>
+        /// Suplementos que se le añadiran al auto rentado
+        /// </summary>
         public Supplement Supplements { get; set; }
 
         #endregion Properties

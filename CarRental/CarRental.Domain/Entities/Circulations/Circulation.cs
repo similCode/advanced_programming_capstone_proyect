@@ -20,11 +20,15 @@ namespace CarRental.Domain.Entities.Circulations
 
         public Color Color { get; set; }
 
-        public Color Color2 { get; set; }
+        public Color? Color2 { get; set; }
 
         public Insurance Insurance { get; }
 
         public Somaton Somaton { get; }
+
+        /// <summary>
+        /// Fecha de Expiracion de la reservacion
+        /// </summary>
         public DateTime ExpirationDate { get; set; }
 
         public DateTime ExpeditionDate { get; set; }

@@ -6,7 +6,7 @@ namespace CarRental.Domain.Entities.Persons
 {
     /// <summary>
     /// Modela la clase usuario que puede ser
-    /// un cliente, un admin, un empleado, un proveedor.
+    /// un un admin, un empleado, un proveedor.
     /// </summary>
     public class Users : Person
     {
