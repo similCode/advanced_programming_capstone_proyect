@@ -1,6 +1,8 @@
-﻿using CarRental.Domain.Entities.Reservations;
+﻿using CarRental.Domain.Entities.Common;
+using CarRental.Domain.Entities.Reservations;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +17,13 @@ namespace CarRental.Domain.Entities.Persons
         /// <summary>
         /// Lista de las reservaciones del cliente.
         /// </summary>
+        [NotMapped]
         public List<Reservation> Reservations { get; set; }
+
+        /// <summary>
+        /// Identificador unico de reservacion
+        /// </summary>
+        public Guid Reservation { get; set; }
 
         /// <summary>
         /// Constructor requerido por Entity Framework

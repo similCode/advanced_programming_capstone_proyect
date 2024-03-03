@@ -36,7 +36,7 @@ namespace CarRental.Domain.Entities.Vehicles
 
         public Color Color { get; set; }
 
-        public Color? Color2 { get; set; }
+        public Color Color2 { get; set; }
 
         public Insurance Insurance { get; }
 
@@ -79,14 +79,13 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <param name="color"></param>
         /// <param name="wheelAmount"></param>
         /// <param name="weight"></param>
-        public Vehicle(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Color color2, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight)
+        public Vehicle(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight)
         {
             BrandName = brandName;
             FabricationDate = fabricationDate;
             Plate = plate;
             MotorNumber = motorNumber;
             Color = color;
-            Color2 = color2;
             Insurance = insurance;
             Somaton = somaton;
             Model = model;

@@ -12,9 +12,12 @@ namespace CarRental.Domain.Entities.Common
     {
         #region Properties
 
+        /// <summary>
+        /// Identificador de las tablas de bases de datos
+        /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         #endregion Properties
     }

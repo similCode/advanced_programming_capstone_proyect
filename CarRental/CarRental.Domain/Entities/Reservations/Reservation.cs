@@ -7,6 +7,7 @@ using CarRental.Domain.Entities.Vehicles;
 using CarRental.Domain.Entities.Supplements;
 
 using CarRental.Domain.Abstract;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarRental.Domain.Entities.Reservations
 {
@@ -22,12 +23,24 @@ namespace CarRental.Domain.Entities.Reservations
         /// <summary>
         /// Cliente que realizó la renta.
         /// </summary>
+        [NotMapped]
         public Client Client { get; }
+
+        /// <summary>
+        /// Identificador unico del cliente
+        /// </summary>
+        private Guid ClientId { get; set; }
 
         /// <summary>
         /// Vehículo a rentar.
         /// </summary>
+        [NotMapped]
         public Vehicle Vehicle { get; }
+
+        /// <summary>
+        /// Identificador unico del vehiculo
+        /// </summary>
+        private Guid VehicleId { get; set; }
 
         /// <summary>
         /// Fecha de inicio de la renta.
@@ -42,14 +55,26 @@ namespace CarRental.Domain.Entities.Reservations
         /// <summary>
         /// Precio total a pagar por la orden.
         /// </summary>
+        [NotMapped]
         public Price TotalPrice { get; set; }
+
+        /// <summary>
+        /// Identificador unico del precio
+        /// </summary>
+        private Guid PriceId { get; set; }
 
         /// <summary>
         /// Estado de la reservacion
         /// </summary>
         public Status Status { get; set; }
 
+        [NotMapped]
         public Supplement ReservationSupplement { get; set; }
+
+        /// <summary>
+        /// Identificador unico de suplemento
+        /// </summary>
+        private Guid SupplementId { get; set; }
 
         /// <summary>
         /// Constructor requerido por Entity Framework
