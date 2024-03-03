@@ -5,3 +5,5 @@ CarRental/obj
 CarRental/bin
 CarRental/CarRental.Domain/obj
 CarRental/CarRental.Domain/bin
+CarRental/CarRental.DataAccess/obj
+CarRental/CarRental.DataAccess/bin

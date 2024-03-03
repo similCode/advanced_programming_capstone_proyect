@@ -49,7 +49,7 @@ namespace CarRental.Domain.Abstract
         /// <summary>
         /// 2do Color del carro
         /// </summary>
-        public Color? Color2 { get; set; }
+        public Color Color2 { get; set; }
 
         /// <summary>
         /// Seguro del carro

@@ -1,11 +1,12 @@
-﻿using System;
+﻿using CarRental.Domain.Entities.Common;
+using System;
 
 namespace CarRental.Domain.Entities.Insurances
 {
     /// <summary>
     /// Summary description for Class1
     /// </summary>
-    public class Insurance
+    public class Insurance : Entity
     {
         public enum Status
         {

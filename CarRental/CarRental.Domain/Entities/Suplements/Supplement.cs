@@ -6,7 +6,7 @@ namespace CarRental.Domain.Entities.Supplements
     /// <summary>
     /// Modela el suplemento de un auto
     /// </summary>
-    public class Supplement
+    public class Supplement : Entity
     {
         /// <summary>
         /// Precio del suplemento

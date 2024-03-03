@@ -44,7 +44,7 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <param name="numberOfVelocities"></param>
         /// <param name="maxVelocity"></param>
         /// <param name="hasAirConditioning"></param>
-        public Car(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Color color2, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight, int doorsAmount, int numberOfVelocities, int maxVelocity, bool hasAirConditioning) : base(brandName, fabricationDate, plate, motorNumber, color, color2, insurance, somaton, model, passengerCapacity, price, wheelAmount, weight)
+        public Car(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight, int doorsAmount, int numberOfVelocities, int maxVelocity, bool hasAirConditioning) : base(brandName, fabricationDate, plate, motorNumber, color, insurance, somaton, model, passengerCapacity, price, wheelAmount, weight)
         {
             DoorsAmount = doorsAmount;
             NumberOfVelocities = numberOfVelocities;

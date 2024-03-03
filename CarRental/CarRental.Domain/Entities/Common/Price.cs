@@ -10,7 +10,7 @@ namespace CarRental.Domain.Entities.Common;
 /// <summary>
 /// Precio de una entidad del concesionario.
 /// </summary>
-public class Price
+public class Price : Entity
 {
     #region Properties
 
@@ -24,10 +24,11 @@ public class Price
     /// </summary>
     public double Value { get; set; }
 
-    #endregion Properties
+    protected Price()
+    { }
 
     /// <summary>
-    /// Inicializa un objeto <see cref="Price"/>
+    /// Constructor por parametros
     /// </summary>
     /// <param name="currency">Divisa a en la que se expresa el valor del automóvil.</param>
     /// <param name="value">Valor del precio.</param>
@@ -36,4 +37,6 @@ public class Price
         Currency = currency;
         Value = value;
     }
+
+    #endregion Properties
 }
