@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarRental.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d1935e23c5358c9ce67cddb7af3b6e269afa509")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76b08493e2ae7acfb5e748ed794f9573c07abbb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarRental.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarRental.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
