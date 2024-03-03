@@ -3,19 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< Updated upstream
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.DataAccess", "CarRental.DataAccess\CarRental.DataAccess.csproj", "{CF11CF02-8F97-4146-9A75-71B66F1EBC93}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.Domain", "CarRental.Domain\CarRental.Domain.csproj", "{BCF955AE-E87D-4339-B048-215A336F4FE0}"
-=======
-<<<<<<< Updated upstream
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.Domain", "CarRental.Domain\CarRental.Domain.csproj", "{DCFB75D5-68B1-4BC5-89B7-5DA16A75E4E6}"
-=======
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.Domain", "CarRental.Domain\CarRental.Domain.csproj", "{D03D787E-DEBA-4BAA-BEB4-EBA86965A3B7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.DataAccess", "CarRental.DataAccess\CarRental.DataAccess.csproj", "{7020FF04-460B-4DEA-94F1-C00BB7BEE1CC}"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,7 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< Updated upstream
 		{CF11CF02-8F97-4146-9A75-71B66F1EBC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF11CF02-8F97-4146-9A75-71B66F1EBC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF11CF02-8F97-4146-9A75-71B66F1EBC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,23 +21,6 @@ Global
 		{BCF955AE-E87D-4339-B048-215A336F4FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCF955AE-E87D-4339-B048-215A336F4FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCF955AE-E87D-4339-B048-215A336F4FE0}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-<<<<<<< Updated upstream
-		{DCFB75D5-68B1-4BC5-89B7-5DA16A75E4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCFB75D5-68B1-4BC5-89B7-5DA16A75E4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCFB75D5-68B1-4BC5-89B7-5DA16A75E4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCFB75D5-68B1-4BC5-89B7-5DA16A75E4E6}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{D03D787E-DEBA-4BAA-BEB4-EBA86965A3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D03D787E-DEBA-4BAA-BEB4-EBA86965A3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D03D787E-DEBA-4BAA-BEB4-EBA86965A3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D03D787E-DEBA-4BAA-BEB4-EBA86965A3B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7020FF04-460B-4DEA-94F1-C00BB7BEE1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7020FF04-460B-4DEA-94F1-C00BB7BEE1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7020FF04-460B-4DEA-94F1-C00BB7BEE1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7020FF04-460B-4DEA-94F1-C00BB7BEE1CC}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
