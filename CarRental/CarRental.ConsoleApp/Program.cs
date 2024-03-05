@@ -26,12 +26,14 @@ internal class Program
             //Genera BD con las tablas configuradas en su migración
             appContext.Database.Migrate();
         }
-        //Crear el precio de un carro
 
-         Price carPrice = new(MoneyType.Euro, 5000);
-    
-        appContext.Set<Price>().Add(carPrice);
-        appContext.SaveChanges();
+        //CRUD con usuarios
+        
+        // Crear un usuario
+
+         Users user = new("Carlos","Rodríguez","99062207946","Cuba"UserRoleType.Guest);
+         appContext.Set<Users>().Add(user);
+         appContext.SaveChanges();
         
        //Lectura del nombre de todos los usuarios
        var users= appContext.Set<Users>().ToList();
@@ -41,7 +43,7 @@ internal class Program
          loadedUser.userName= UserName;
       }
       
-     // actualización del nombre del país de un usuario que emigró
+     // Actualización del nombre del país del usuario creado
         var users= appContext.Set<Users>().ToList();
         foreach(var loadedUser in users)
         {
@@ -52,6 +54,16 @@ internal class Program
           }
         }
         appContext.SaveChanges();
+
+     //Eliminar a todos los usuarios
+     var users= appContext.Set<Users>().ToList();
+        foreach(var loadedUser in users)
+        {
+             appContext.Set<Users>().Remove(loadedUser);
+          
+        }
+        appContext.SaveChanges();
+      
 
     }
 
