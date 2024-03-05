@@ -31,11 +31,19 @@ internal class Program
 
         // Crear un usuario
 
-        Users user = new("Carlos", "Rodríguez", "99062207946", "Cuba"UserRoleType.Guest);
+        Users user = new("Carlos", "Rodríguez", "99062207946", "Cuba", UserRoleType.Guest);
         appContext.Set<Users>().Add(user);
         appContext.SaveChanges();
 
         //Lectura del nombre de todos los usuarios
+        var users = appContext.Set<Users>().ToList();
+        foreach (var loadedUser in users)
+        {
+            string UserName = appContext.Set<string>().Find(loadedUser.userName);
+            loadedUser.userName = UserName;
+        }
+
+        // Actualización del nombre del país del usuario creado
         var users = appContext.Set<Users>().ToList();
         foreach (var loadedUser in users)
         {
@@ -62,5 +70,51 @@ internal class Program
             appContext.Set<Users>().Remove(loadedUser);
         }
         appContext.SaveChanges();
+
+        //Creando Insurance
+        Insurance carInsurance = new Insurance("enable", "4394925832", new DateTime(2029, 3, 12), new DateTime(2023, 5, 12));
+        appContext.Set<Insurance>().Add(carInsurance);
+        appContext.SaveChanges()
+
+        //leyendo insurance
+        var insurances = appContext.Set<Insurances>().ToList();
+
+        //actualizando insurance
+        foreach (insurance in insurances)
+        {
+            insurance.Status = "disable";
+            appContext.Set<Insurance>().Update(insurance)
+        }
+        appContext.SaveChanges()
+
+        //Borrando insurance
+        foreach (insurance in insurances)
+        {
+            appContext.Set<Insurance>().Remove(insurance)
+        }
+        appContext.SaveChanges()
+
+        //Creando Somaton
+        Somaton carSomaton = new Somaton(new DateTime(2028, 12, 12), new DateTime(2023, 8, 9), "Approved", 09310940748658516506);
+
+        //Leyendo Somaton
+        var somatons = appContext.Set<Somaton>().ToList();
+
+        //Actualizando Somaton
+        foreach (somaton in somatons)
+        {
+            somaton.Status = "Cancelled";
+            appContext.Set<Somaton>().Update(somaton)
+        }
+        appContext.SaveChanges()
+
+        //Borrando Somaton
+        foreach (somaton in somatons)
+        {
+            appContext.Set<Somaton>().Remove(somaton)
+        }
+        appContext.SaveChanges()
     }
+
+>>>>>>> bbe4ef8a5d18b8cab294a2e6534e7c365f14e84b
 }
