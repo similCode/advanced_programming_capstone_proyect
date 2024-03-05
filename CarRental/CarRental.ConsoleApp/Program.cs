@@ -39,32 +39,32 @@ internal class Program
         var users = appContext.Set<Users>().ToList();
         foreach (var loadedUser in users)
         {
-            string UserName = appContext.Set<string>().Find(loadedUser.userName);
-            loadedUser.userName = UserName;
+            string UserName = appContext.Set<string>().Find(loadedUser.Name);
+            loadedUser.Name = UserName;
         }
 
         // Actualización del nombre del país del usuario creado
-        var users = appContext.Set<Users>().ToList();
+        users = appContext.Set<Users>().ToList();
         foreach (var loadedUser in users)
         {
-            string UserName = appContext.Set<string>().Find(loadedUser.userName);
-            loadedUser.userName = UserName;
+            string UserName = appContext.Set<string>().Find(loadedUser.Name);
+            loadedUser.Name = UserName;
         }
 
         // Actualización del nombre del país del usuario creado
-        var users = appContext.Set<Users>().ToList();
+        users = appContext.Set<Users>().ToList();
         foreach (var loadedUser in users)
         {
             if (loadedUser.CI = "99062207946")
             {
-                loadedUser.countryName = "USA";
+                loadedUser.CountryName = "USA";
                 appContext.Set<Users>().Update(loadedUser);
             }
         }
         appContext.SaveChanges();
 
         //Eliminar a todos los usuarios
-        var users = appContext.Set<Users>().ToList();
+        users = appContext.Set<Users>().ToList();
         foreach (var loadedUser in users)
         {
             appContext.Set<Users>().Remove(loadedUser);
@@ -80,7 +80,7 @@ internal class Program
         var insurances = appContext.Set<Insurances>().ToList();
 
         //actualizando insurance
-        foreach (insurance in insurances)
+        foreach (var insurance in insurances)
         {
             insurance.Status = "disable";
             appContext.Set<Insurance>().Update(insurance);
@@ -88,7 +88,7 @@ internal class Program
         appContext.SaveChanges();
 
         //Borrando insurance
-        foreach (insurance in insurances)
+        foreach (var insurance in insurances)
         {
             appContext.Set<Insurance>().Remove(insurance);
         }
@@ -101,7 +101,7 @@ internal class Program
         var somatons = appContext.Set<Somaton>().ToList();
 
         //Actualizando Somaton
-        foreach (somaton in somatons)
+        foreach (var somaton in somatons)
         {
             somaton.Status = "Cancelled";
             appContext.Set<Somaton>().Update(somaton);
