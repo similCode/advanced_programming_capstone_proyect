@@ -26,7 +26,7 @@ internal class Program
             //Genera BD con las tablas configuradas en su migración
             appContext.Database.Migrate();
         }
-        //Create
+        //Crear el precio de un carro
 
          Price carPrice = new(MoneyType.Euro, 5000);
     
