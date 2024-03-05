@@ -27,9 +27,9 @@ namespace CarRental.Domain.Entities.Persons
         /// <summary>
         /// Identificador de la persona.
         /// </summary>
-        public string ID { get; }
+        public string CI { get; }
 
-        public string CountryName { get; }
+        public string CountryName { get; set; }
 
         /// <summary>
         /// Correo electronico de la persona.
@@ -42,7 +42,7 @@ namespace CarRental.Domain.Entities.Persons
         public string Phone { get; set; }
 
         /// <summary>
-        /// Constructor por default
+        /// Constructor requerido por EntityFramework
         /// </summary>
         protected Person()
         { }
@@ -57,7 +57,7 @@ namespace CarRental.Domain.Entities.Persons
         {
             Name = name;
             LastName = lastName;
-            ID = iD;
+            CI = iD;
             CountryName = countryName;
         }
     }

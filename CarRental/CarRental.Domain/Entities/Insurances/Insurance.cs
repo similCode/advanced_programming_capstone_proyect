@@ -8,17 +8,36 @@ namespace CarRental.Domain.Entities.Insurances
     /// </summary>
     public class Insurance : Entity
     {
-        public enum Status
+        protected Insurance() { }
+        public Insurance(Statusenum status, string policyNumber, DateTime expirationDate, DateTime expeditionDate)
+        {
+            Status = status;
+            PolicyNumber = policyNumber;
+            ExpirationDate = expirationDate;
+            ExpeditionDate = expeditionDate;
+        }
+
+        /// <summary>
+        /// Posibles estados
+        /// </summary>
+        public enum Statusenum
         {
             Enable,
 
             Disable,
         }
+        public Statusenum Status { get; set; }
 
         public string PolicyNumber { get; }
 
+        /// <summary>
+        /// Fecha de expiracion
+        /// </summary>
         public DateTime ExpirationDate { get; set; }
 
+        /// <summary>
+        /// Fecha de creacion de Insurance
+        /// </summary>
         public DateTime ExpeditionDate { get; set; }
     }
 }

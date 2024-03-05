@@ -109,6 +109,7 @@ namespace CarRental.DataAccess.Concrete
             modelBuilder.Entity<Person>().ToTable("Persons");
             modelBuilder.Entity<Client>().ToTable("Clients");
             modelBuilder.Entity<Users>().ToTable("Users");
+
             modelBuilder.Entity<Circulation>().ToTable("Circulations");
             modelBuilder.Entity<Circulation>().Property(circ => circ.Color).HasConversion
                 (c => c.ToArgb(),
