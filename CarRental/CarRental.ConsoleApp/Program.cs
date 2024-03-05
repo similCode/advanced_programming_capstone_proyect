@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using System.Drawing;
 using CarRental.DataAccess.FluentConfigurations;
 using CarRental.DataAccess.Concrete;
+using System.Linq;
 
 internal class Program
 {
@@ -32,9 +33,25 @@ internal class Program
         appContext.Set<Price>().Add(carPrice);
         appContext.SaveChanges();
         
-        
-
-
+       //Lectura del nombre de todos los usuarios
+       var users= appContext.Set<Users>().ToList();
+      foreach (var loadedUser in users)
+      {
+         string UserName=appContext.Set<string>().Find(loadedUser.userName);
+         loadedUser.userName= UserName;
+      }
+      
+     // actualización del nombre del país de un usuario que emigró
+        var users= appContext.Set<Users>().ToList();
+        foreach(var loadedUser in users)
+        {
+          if(loadedUser.CI="99062207946")
+          {
+            loadedUser.countryName="USA"
+            appContext.Set<Users>().Update(loadedUser);
+          }
+        }
+        appContext.SaveChanges();
 
     }
 
