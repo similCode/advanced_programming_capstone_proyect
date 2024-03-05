@@ -57,8 +57,8 @@ internal class Program
         {
             if (loadedUser.CI = "99062207946")
             {
-                loadedUser.countryName = "USA"
-              appContext.Set<Users>().Update(loadedUser);
+                loadedUser.countryName = "USA";
+                appContext.Set<Users>().Update(loadedUser);
             }
         }
         appContext.SaveChanges();
@@ -74,7 +74,7 @@ internal class Program
         //Creando Insurance
         Insurance carInsurance = new Insurance("enable", "4394925832", new DateTime(2029, 3, 12), new DateTime(2023, 5, 12));
         appContext.Set<Insurance>().Add(carInsurance);
-        appContext.SaveChanges()
+        appContext.SaveChanges();
 
         //leyendo insurance
         var insurances = appContext.Set<Insurances>().ToList();
@@ -83,16 +83,16 @@ internal class Program
         foreach (insurance in insurances)
         {
             insurance.Status = "disable";
-            appContext.Set<Insurance>().Update(insurance)
+            appContext.Set<Insurance>().Update(insurance);
         }
-        appContext.SaveChanges()
+        appContext.SaveChanges();
 
         //Borrando insurance
         foreach (insurance in insurances)
         {
-            appContext.Set<Insurance>().Remove(insurance)
+            appContext.Set<Insurance>().Remove(insurance);
         }
-        appContext.SaveChanges()
+        appContext.SaveChanges();
 
         //Creando Somaton
         Somaton carSomaton = new Somaton(new DateTime(2028, 12, 12), new DateTime(2023, 8, 9), "Approved", 09310940748658516506);
@@ -104,17 +104,15 @@ internal class Program
         foreach (somaton in somatons)
         {
             somaton.Status = "Cancelled";
-            appContext.Set<Somaton>().Update(somaton)
+            appContext.Set<Somaton>().Update(somaton);
         }
-        appContext.SaveChanges()
+        appContext.SaveChanges();
 
         //Borrando Somaton
         foreach (somaton in somatons)
         {
-            appContext.Set<Somaton>().Remove(somaton)
+            appContext.Set<Somaton>().Remove(somaton);
         }
-        appContext.SaveChanges()
+        appContext.SaveChanges();
     }
-
->>>>>>> bbe4ef8a5d18b8cab294a2e6534e7c365f14e84b
 }
