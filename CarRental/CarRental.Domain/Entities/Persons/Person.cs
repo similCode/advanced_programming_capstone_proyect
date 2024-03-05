@@ -42,7 +42,7 @@ namespace CarRental.Domain.Entities.Persons
         public string Phone { get; set; }
 
         /// <summary>
-        /// Constructor por default
+        /// Constructor requerido por EntityFramework
         /// </summary>
         protected Person()
         { }

@@ -16,7 +16,7 @@ using System.Linq;
 
 internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //Creando un contexto para interactuar con la base de datos
         ApplicationContext appContext = new("Data Source=CarRentalDB.sqlite");
@@ -28,47 +28,39 @@ internal class Program
         }
 
         //CRUD con usuarios
-        
+
         // Crear un usuario
 
-         Users user = new("Carlos","Rodríguez","99062207946","Cuba"UserRoleType.Guest);
-         appContext.Set<Users>().Add(user);
-         appContext.SaveChanges();
-        
-       //Lectura del nombre de todos los usuarios
-       var users= appContext.Set<Users>().ToList();
-      foreach (var loadedUser in users)
-      {
-         string UserName=appContext.Set<string>().Find(loadedUser.userName);
-         loadedUser.userName= UserName;
-      }
-      
-     // Actualización del nombre del país del usuario creado
-        var users= appContext.Set<Users>().ToList();
-        foreach(var loadedUser in users)
+        Users user = new("Carlos", "Rodríguez", "99062207946", "Cuba"UserRoleType.Guest);
+        appContext.Set<Users>().Add(user);
+        appContext.SaveChanges();
+
+        //Lectura del nombre de todos los usuarios
+        var users = appContext.Set<Users>().ToList();
+        foreach (var loadedUser in users)
         {
-          if(loadedUser.CI="99062207946")
-          {
-            loadedUser.countryName="USA"
-            appContext.Set<Users>().Update(loadedUser);
-          }
+            string UserName = appContext.Set<string>().Find(loadedUser.userName);
+            loadedUser.userName = UserName;
+        }
+
+        // Actualización del nombre del país del usuario creado
+        var users = appContext.Set<Users>().ToList();
+        foreach (var loadedUser in users)
+        {
+            if (loadedUser.CI = "99062207946")
+            {
+                loadedUser.countryName = "USA"
+              appContext.Set<Users>().Update(loadedUser);
+            }
         }
         appContext.SaveChanges();
 
-     //Eliminar a todos los usuarios
-     var users= appContext.Set<Users>().ToList();
-        foreach(var loadedUser in users)
+        //Eliminar a todos los usuarios
+        var users = appContext.Set<Users>().ToList();
+        foreach (var loadedUser in users)
         {
-             appContext.Set<Users>().Remove(loadedUser);
-          
+            appContext.Set<Users>().Remove(loadedUser);
         }
         appContext.SaveChanges();
-      
-
     }
-
-     
-
-
-
 }

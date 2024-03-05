@@ -2,6 +2,9 @@
 
 namespace CarRental.Domain.Entities.Types
 {
+    /// <summary>
+    /// Posibles roles de usuario
+    /// </summary>
     public enum UserRoleType
     {
         Guest,
