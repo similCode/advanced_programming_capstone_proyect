@@ -32,7 +32,7 @@ internal class Program
         appContext.Set<Price>().Add(carPrice);
         appContext.SaveChanges();
         
-        //Car car = new Car("Ferrari",DateTime.Today); Evidentemente yo no voy a llenar la pila de campos esa, por favor arreglen eso.
+        
 
 
 
