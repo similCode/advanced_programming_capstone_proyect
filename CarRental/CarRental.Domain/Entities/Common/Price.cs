@@ -24,11 +24,14 @@ public class Price : Entity
     /// </summary>
     public double Value { get; set; }
 
+    /// <summary>
+    /// Constructor requerido por EntityFrameworkCore para migraciones
+    /// </summary>
     protected Price()
     { }
 
     /// <summary>
-    /// Constructor por parametros
+    /// Inicializa los precios
     /// </summary>
     /// <param name="currency">Divisa a en la que se expresa el valor del automóvil.</param>
     /// <param name="value">Valor del precio.</param>

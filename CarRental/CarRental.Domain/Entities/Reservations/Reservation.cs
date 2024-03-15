@@ -77,13 +77,13 @@ namespace CarRental.Domain.Entities.Reservations
         private Guid SupplementId { get; set; }
 
         /// <summary>
-        /// Constructor requerido por Entity Framework
+        /// Constructor requerido por EntityFrameworkCore para migraciones
         /// </summary>
         protected Reservation()
         { }
 
         /// <summary>
-        /// Constructor por parametros
+        /// Inicializa una reservacion
         /// </summary>
         /// <param name="countryName"></param>
         /// <param name="client"></param>

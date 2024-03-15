@@ -32,13 +32,13 @@ namespace CarRental.Domain.Entities.Vehicles
         public int MaxVelocity { get; }
 
         /// <summary>
-        /// Constructor requerido por Entity Framework
+        /// Constructor requerido por EntityFrameworkCore para migraciones
         /// </summary>
         protected Car()
         { }
 
         /// <summary>
-        /// Constructor por parametros
+        /// Inicializa un carro
         /// </summary>
         /// <param name="doorsAmount"></param>
         /// <param name="numberOfVelocities"></param>
