@@ -26,13 +26,13 @@ namespace CarRental.Domain.Entities.Persons
         public Guid Reservation { get; set; }
 
         /// <summary>
-        /// Constructor requerido por Entity Framework
+        /// Constructor requerido por EntityFrameworkCore para migraciones
         /// </summary>
         protected Client()
         { }
 
         /// <summary>
-        /// Constructor por parametros
+        /// Inicializa un cliente
         /// </summary>
         /// <param name="name"></param>
         /// <param name="lastName"></param>

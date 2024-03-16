@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CarRental.ConsoleApp
-build_property.ProjectDir = D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.ConsoleApp\
+build_property.ProjectDir = D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.ConsoleApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

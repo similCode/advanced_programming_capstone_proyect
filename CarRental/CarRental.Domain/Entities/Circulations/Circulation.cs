@@ -45,8 +45,51 @@ namespace CarRental.Domain.Entities.Circulations
         /// </summary>
         public DateTime ExpirationDate { get; set; }
 
+        /// <summary>
+        /// Fecha de creado
+        /// </summary>
         public DateTime ExpeditionDate { get; set; }
 
         public string VIN { get; }
+
+        /// <summary>
+        /// Constructor requerido por Entity Framework
+        /// </summary>
+        protected Circulation()
+        { }
+
+        /// <summary>
+        /// Constructor por parametros
+        /// </summary>
+        /// <param name="brandName"></param>
+        /// <param name="model"></param>
+        /// <param name="fabricationDate"></param>
+        /// <param name="plate"></param>
+        /// <param name="motorNumber"></param>
+        /// <param name="color"></param>
+        /// <param name="color2"></param>
+        /// <param name="insurance"></param>
+        /// <param name="insuranceID"></param>
+        /// <param name="somaton"></param>
+        /// <param name="somatonId"></param>
+        /// <param name="expirationDate"></param>
+        /// <param name="expeditionDate"></param>
+        /// <param name="vin"></param>
+        public Circulation(string brandName, string model, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Guid insuranceID, Somaton somaton, Guid somatonId, DateTime expirationDate, DateTime expeditionDate, string vin)
+        {
+            BrandName = brandName;
+            Model = model;
+            FabricationDate = fabricationDate;
+            Plate = plate;
+            MotorNumber = motorNumber;
+            Color = color;
+            Insurance = insurance;
+            InsuranceID = insuranceID;
+            Somaton = somaton;
+            SomatonId = somatonId;
+            ExpirationDate = expirationDate;
+            ExpeditionDate = expeditionDate;
+            VIN = vin;
+        }
     }
 }

@@ -22,13 +22,13 @@ namespace CarRental.Domain.Entities.Vehicles
         private bool HasSideCar { get; set; }
 
         /// <summary>
-        /// Constructor requerido por Entity Framework
+        /// Constructor requerido por EntityFrameworkCore para migraciones
         /// </summary>
         protected Motorcycle()
         { }
 
         /// <summary>
-        /// Constructor por parametros
+        /// Inicializa una motocicleta
         /// </summary>
         /// <param name="brandName"></param>
         /// <param name="fabricationDate"></param>

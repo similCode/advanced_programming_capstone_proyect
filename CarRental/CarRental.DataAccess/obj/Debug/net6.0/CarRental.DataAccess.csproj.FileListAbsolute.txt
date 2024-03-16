@@ -54,3 +54,6 @@ D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_c
 D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.pdb
 D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.genruntimeconfig.cache
 D:\Programación\Proyectos VS\AdvancePro-GitHub\similCode\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\ref\CarRental.DataAccess.dll
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\Nueva carpeta\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.dll
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\Nueva carpeta\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\refint\CarRental.DataAccess.dll
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\Nueva carpeta\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess\obj\Debug\net6.0\CarRental.DataAccess.pdb

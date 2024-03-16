@@ -24,11 +24,11 @@ namespace CarRental.Domain.Entities.Persons
         /// <summary>
         /// Constructor por parametros
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="lastName"></param>
-        /// <param name="iD"></param>
-        /// <param name="countryName"></param>
-        /// <param name="role"></param>
+        /// <param name="name">Nombre</param>
+        /// <param name="lastName">Apellido</param>
+        /// <param name="iD">Identificador</param>
+        /// <param name="countryName">Nombre del pais</param>
+        /// <param name="role">Rol</param>
         public Users(string name, string lastName, string iD, string countryName, UserRoleType role) : base(name, lastName, iD, countryName)
         {
             Role = role;

@@ -30,13 +30,13 @@ namespace CarRental.Domain.Entities.Somatons
         public string Number { get; set; }
 
         /// <summary>
-        /// Constructor requerido por EntityFramework
+        /// Constructor requerido por EntityFrameworkCore para migraciones
         /// </summary>
         protected Somaton()
         { }
 
         /// <summary>
-        /// Constructor por parametros
+        /// Inicializa un somaton
         /// </summary>
         /// <param name="expirationDate"></param>
         /// <param name="expeditionDate"></param>
