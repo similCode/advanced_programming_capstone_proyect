@@ -39,6 +39,16 @@ namespace CarRental.DataAccess.Repositories
             return _context.Set<Vehicle>().ToList();
         }
 
+        public IEnumerable<Car> GetAllCars()
+        {
+            return _context.Set<Car>().ToList();
+        }
+
+        public IEnumerable<Motorcycle> GetAllMotorcycles()
+        {
+            return _context.Set<Motorcycle>().ToList();
+        }
+
         public void UpdateVehicle(Vehicle vehicle)
         {
             _context.Update(vehicle);

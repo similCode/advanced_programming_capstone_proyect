@@ -50,6 +50,18 @@ public interface PersonRepository : IRepository
     IEnumerable<Person> GetAllPersons();
 
     /// <summary>
+    /// Obtiene todas las personas de BD
+    /// </summary>
+    /// <returns></returns>
+    IEnumerable<Users> GetAllUsers();
+
+    /// <summary>
+    /// Obtiene todos los clientes de BD
+    /// </summary>
+    /// <returns></returns>
+    IEnumerable<Client> GetAllClients();
+
+    /// <summary>
     /// Actualiza una persona en BD
     /// </summary>
     /// <param name="person">Persona a actualizar</param>

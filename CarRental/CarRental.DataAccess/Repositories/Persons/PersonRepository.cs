@@ -36,6 +36,16 @@ public partial class ApplicationRepository : PersonRepository
         return _context.Set<Person>().ToList();
     }
 
+    public IEnumerable<Users> GetAllUsers()
+    {
+        return _context.Set<Users>().ToList();
+    }
+
+    public IEnumerable<Client> GetAllClients()
+    {
+        return _context.Set<Client>().ToList();
+    }
+
     public void UpdatePerson(Person person)
     {
         _context.Update(person);

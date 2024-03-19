@@ -72,6 +72,18 @@ namespace CarRental.DataAccess.Abstract.Vehicles
         IEnumerable<Vehicle> GetAllVehicles();
 
         /// <summary>
+        /// Obtiene todos los carros en BD
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<Car> GetAllCars();
+
+        /// <summary>
+        /// Obtiene todas las motocicletas en BD
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<Motorcycle> GetAllMotorcycles();
+
+        /// <summary>
         /// Actualiza un vehiculo en BD
         /// </summary>
         /// <param name="vehicle">Vehiculo a actualizar</param>
