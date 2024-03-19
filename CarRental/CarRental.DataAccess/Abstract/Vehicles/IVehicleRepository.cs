@@ -36,7 +36,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
         /// <param name="maxVelocity">Maxima velocidad</param>
         /// <param name="hasAirConditioning">Aire acondicianado</param>
         /// <returns></returns>
-        Car CreateCar(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight, int doorsAmount, int numberOfVelocities, int maxVelocity, bool hasAirConditioning);
+        Car CreateCar(string brandName, DateTime fabricationDate, Color color, Insurance insurance, Somaton somaton, int passengerCapacity, Price price, int numberOfVelocities, int maxVelocity, bool hasAirConditioning);
 
         /// <summary>
         /// Crea una motocicleta en BD
@@ -55,7 +55,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
         /// <param name="weight">peso</param>
         /// <param name="hasSideCar">Tiene carrito</param>
         /// <returns></returns>
-        Motorcycle CreateMotorcycle(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight, bool hasSideCar);
+        Motorcycle CreateMotorcycle(string brandName, DateTime fabricationDate, Color color, Insurance insurance, Somaton somaton, int passengerCapacity, Price price, bool hasSideCar);
 
         /// <summary>
         /// Obtiene un vehiculo de BD
