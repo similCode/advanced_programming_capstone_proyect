@@ -17,9 +17,9 @@ namespace CarRental.DataAccess.Repositories
     /// </summary>
     public partial class ApplicationRepository : ICirculationRepository
     {
-        public Circulation CreateCirculation(string brandName, string model, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Guid insuranceID, Somaton somaton, Guid somatonId, DateTime expirationDate, DateTime expeditionDate, string vin)
+        public Circulation CreateCirculation(string brandName, string model, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, DateTime expirationDate, DateTime expeditionDate, string vin)
         {
-            Circulation circulation = new Circulation(brandName, model, fabricationDate, plate, motorNumber, color, insurance, insuranceID, somaton, somatonId, expirationDate, expeditionDate, vin);
+            Circulation circulation = new Circulation(brandName, model, fabricationDate, plate, motorNumber, color, insurance, somaton, expirationDate, expeditionDate, vin);
             _context.Add(circulation);
             return circulation;
         }
