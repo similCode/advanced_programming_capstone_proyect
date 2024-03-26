@@ -19,7 +19,7 @@ namespace CarRental.Domain.Entities.Supplements
         public string Description { get; set; }
 
         /// <summary>
-        /// Constructor requerido por  Entity Framework
+        /// Constructor requerido por  EntityFrameworkCore para migraciones
         /// </summary>
         protected Supplement()
         { }

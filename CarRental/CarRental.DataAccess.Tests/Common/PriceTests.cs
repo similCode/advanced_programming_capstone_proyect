@@ -4,7 +4,6 @@ using CarRental.DataAccess.Tests.Utilities;
 using CarRental.Domain.Entities.Common;
 using CarRental.Domain.Entities.Types;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;

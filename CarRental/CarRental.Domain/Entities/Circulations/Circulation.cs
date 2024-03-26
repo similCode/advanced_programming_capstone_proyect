@@ -8,6 +8,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarRental.Domain.Entities.Circulations
 {
+    /// <summary>
+    /// Clase que modela una circulacion
+    /// </summary>
     public class Circulation : Entity, ITransportable
     {
         public string BrandName { get; }
@@ -75,7 +78,7 @@ namespace CarRental.Domain.Entities.Circulations
         /// <param name="expirationDate"></param>
         /// <param name="expeditionDate"></param>
         /// <param name="vin"></param>
-        public Circulation(string brandName, string model, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Guid insuranceID, Somaton somaton, Guid somatonId, DateTime expirationDate, DateTime expeditionDate, string vin)
+        public Circulation(string brandName, string model, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, DateTime expirationDate, DateTime expeditionDate, string vin)
         {
             BrandName = brandName;
             Model = model;
@@ -84,9 +87,7 @@ namespace CarRental.Domain.Entities.Circulations
             MotorNumber = motorNumber;
             Color = color;
             Insurance = insurance;
-            InsuranceID = insuranceID;
             Somaton = somaton;
-            SomatonId = somatonId;
             ExpirationDate = expirationDate;
             ExpeditionDate = expeditionDate;
             VIN = vin;

@@ -16,11 +16,11 @@ namespace CarRental.DataAccess.Tests.Circulation
     [TestClass]
     public class CirculationTests
     {
-        private ICirculationRepository _circulationRepository;
+        public ICirculationRepository _circulationRepository;
 
-        public CirculationTests( )
+        public CirculationTests()
         {
-            _circulationRepository = new ApplicationRepository(ConnectionStringProvider.GetConnectionString()); 
+            _circulationRepository = new ApplicationRepository(ConnectionStringProvider.GetConnectionString());
         }
 
         [TestMethod]
@@ -33,7 +33,6 @@ namespace CarRental.DataAccess.Tests.Circulation
             _circulationRepository.CommitTransaction();
 
             //Assert
-
         }
         [DataRow(1)]
         [TestMethod]
@@ -50,9 +49,9 @@ namespace CarRental.DataAccess.Tests.Circulation
             Assert.IsNotNull(loadedCirculation);
         }
 
-        [DataRow(1,  "Red", 1, 1, "2024-03-16T12:00:00")]
+        [DataRow(1, "Red", 1, 1, "2024-03-16T12:00:00")]
         [TestMethod]
-        public void Can_Update_Circulation(Guid id,  Color color, Guid insuranceID, Guid somatonId, DateTime expirationDate)
+        public void Can_Update_Circulation(Guid id, Color color, Guid insuranceID, Guid somatonId, DateTime expirationDate)
         {
             //Arrange
             _circulationRepository.BeginTransaction();
@@ -67,7 +66,7 @@ namespace CarRental.DataAccess.Tests.Circulation
             _circulationRepository.UpdateCirculation(loadedCirculation);
 
             //Assert
-            var modifyedCirculation = _circulationRepository.GetCirculation(id );
+            var modifyedCirculation = _circulationRepository.GetCirculation(id);
             _circulationRepository.CommitTransaction();
             Assert.AreEqual(modifyedCirculation.Color, color);
             Assert.AreEqual(modifyedCirculation.InsuranceID, insuranceID);
@@ -93,6 +92,5 @@ namespace CarRental.DataAccess.Tests.Circulation
             //Assert
             Assert.IsNull(loadedCirculation);
         }
-
     }
 }

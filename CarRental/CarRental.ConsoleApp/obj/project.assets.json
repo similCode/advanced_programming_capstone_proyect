@@ -2186,11 +2186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\Nueva carpeta\\advanced_programming_capstone_proyect\\CarRental\\CarRental.ConsoleApp\\CarRental.ConsoleApp.csproj",
+      "projectUniqueName": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.ConsoleApp\\CarRental.ConsoleApp.csproj",
       "projectName": "CarRental.ConsoleApp",
-      "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\Nueva carpeta\\advanced_programming_capstone_proyect\\CarRental\\CarRental.ConsoleApp\\CarRental.ConsoleApp.csproj",
+      "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.ConsoleApp\\CarRental.ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\CD\\.nuget\\packages\\",
-      "outputPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\Nueva carpeta\\advanced_programming_capstone_proyect\\CarRental\\CarRental.ConsoleApp\\obj\\",
+      "outputPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CD\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2207,8 +2207,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\Nueva carpeta\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj": {
-              "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\Nueva carpeta\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj"
+            "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj": {
+              "projectPath": "D:\\Universidad\\3ero(Hell)\\Optativa(Topicos Avanzados de Programacion)\\advanced_programming_capstone_proyect\\CarRental\\CarRental.DataAccess\\CarRental.DataAccess.csproj"
             }
           }
         }

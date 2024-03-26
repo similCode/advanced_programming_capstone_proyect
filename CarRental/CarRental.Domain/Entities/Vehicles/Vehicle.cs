@@ -79,20 +79,13 @@ namespace CarRental.Domain.Entities.Vehicles
         /// <param name="color"></param>
         /// <param name="wheelAmount"></param>
         /// <param name="weight"></param>
-        public Vehicle(string brandName, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, string model, int passengerCapacity, Price price, int wheelAmount, int weight)
+        public Vehicle(string brandName, DateTime fabricationDate, Insurance insurance, Somaton somaton, Price price)
         {
             BrandName = brandName;
             FabricationDate = fabricationDate;
-            Plate = plate;
-            MotorNumber = motorNumber;
-            Color = color;
             Insurance = insurance;
             Somaton = somaton;
-            Model = model;
-            PassengerCapacity = passengerCapacity;
             Price = price;
-            WheelAmount = wheelAmount;
-            Weight = weight;
         }
 
         #endregion Properties
