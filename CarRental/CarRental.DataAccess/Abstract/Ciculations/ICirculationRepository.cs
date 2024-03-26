@@ -13,7 +13,7 @@ namespace CarRental.DataAccess.Abstract.Circulations
     /// <summary>
     /// Define las operaciones a realizar en BD con circulaciones
     /// </summary>
-    internal interface ICirculationRepository : IRepository
+    public interface ICirculationRepository : IRepository
     {
         /// <summary>
         /// Crea una circulacion en base de datos

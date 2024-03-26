@@ -1,0 +1,7 @@
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\obj\Debug\net6.0\CarRental.DataAccess.Tests.csproj.AssemblyReference.cache
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\obj\Debug\net6.0\CarRental.DataAccess.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\obj\Debug\net6.0\CarRental.DataAccess.Tests.AssemblyInfoInputs.cache
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\obj\Debug\net6.0\CarRental.DataAccess.Tests.AssemblyInfo.cs
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\obj\Debug\net6.0\CarRental.DataAccess.Tests.csproj.CoreCompileInputs.cache
+D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\obj\Debug\net6.0\CarRental.DataAccess.Tests.sourcelink.json

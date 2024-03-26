@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CarRental.DataAccess.Tests
-build_property.ProjectDir = C:\Users\Leandro\Documents\Visual Studio 2022\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\
+build_property.ProjectDir = D:\Universidad\3ero(Hell)\Optativa(Topicos Avanzados de Programacion)\advanced_programming_capstone_proyect\CarRental\CarRental.DataAccess.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

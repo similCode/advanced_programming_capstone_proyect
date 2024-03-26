@@ -14,7 +14,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
     /// <summary>
     /// Define las operaciones en BD para un vehiculo
     /// </summary>
-    public interface VehicleRepository : IRepository
+    public interface IVehicleRepository : IRepository
     {
         /// <summary>
         /// Crea un carro en BD
@@ -36,7 +36,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
         /// <param name="maxVelocity">Maxima velocidad</param>
         /// <param name="hasAirConditioning">Aire acondicianado</param>
         /// <returns></returns>
-        Car CreateCar(string brandName, DateTime fabricationDate, Color color, Insurance insurance, Somaton somaton, int passengerCapacity, Price price, int numberOfVelocities, int maxVelocity, bool hasAirConditioning);
+        Car CreateCar(string brandName, DateTime fabricationDate, Insurance insurance, Somaton somaton, Price price, int numberOfVelocities, int maxVelocity, bool hasAirConditioning);
 
         /// <summary>
         /// Crea una motocicleta en BD
@@ -55,7 +55,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
         /// <param name="weight">peso</param>
         /// <param name="hasSideCar">Tiene carrito</param>
         /// <returns></returns>
-        Motorcycle CreateMotorcycle(string brandName, DateTime fabricationDate, Color color, Insurance insurance, Somaton somaton, int passengerCapacity, Price price, bool hasSideCar);
+        Motorcycle CreateMotorcycle(string brandName, DateTime fabricationDate, Insurance insurance, Somaton somaton, Price price, bool hasSideCar);
 
         /// <summary>
         /// Obtiene un vehiculo de BD

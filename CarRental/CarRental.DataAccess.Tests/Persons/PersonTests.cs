@@ -3,6 +3,7 @@ using CarRental.DataAccess.Abstract.Persons;
 using CarRental.DataAccess.Repositories;
 using CarRental.DataAccess.Tests.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,10 +61,8 @@ namespace CarRental.DataAccess.Tests.Persons
                 loadedPerson.
                 loadedPerson.
 
-
             //Assert
             _personRepository.CommitTransaction();
-
         }
 
         [DataRow(1)]
@@ -83,7 +82,6 @@ namespace CarRental.DataAccess.Tests.Persons
 
             //Assert
             Assert.IsNull(loadedPerson);
-
         }
     }
 }

@@ -21,7 +21,6 @@ namespace CarRental.DataAccess.Tests.Common
             _priceRepository = new ApplicationRepository(ConnectionStringProvider.GetConnectionString());
         }
 
-
         [TestMethod]
         public void Can_Create_Price()
         {
@@ -30,7 +29,6 @@ namespace CarRental.DataAccess.Tests.Common
             //Execute
             _priceRepository.CommitTransaction();
             //Assert
-
         }
 
         [DataRow(1)]
