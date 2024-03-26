@@ -14,7 +14,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
     /// <summary>
     /// Define las operaciones en BD para un vehiculo
     /// </summary>
-    public interface VehicleRepository : IRepository
+    public interface IVehicleRepository : IRepository
     {
         /// <summary>
         /// Crea un carro en BD
@@ -63,7 +63,7 @@ namespace CarRental.DataAccess.Abstract.Vehicles
         /// <typeparam name="V">Tipo de vehiculo</typeparam>
         /// <param name="id">Identificador del vehiculo</param>
         /// <returns>Retorna un vehiculo si existe en BD, de lo contrario<see langword="null"></returns>
-        V? GetVehicle<V>(Guid id) where V : Vehicle;
+        Vehicle? GetVehicle(Guid id);
 
         /// <summary>
         /// Obtiene todos los vehiculos en BD

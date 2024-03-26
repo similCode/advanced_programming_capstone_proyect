@@ -11,7 +11,7 @@ namespace CarRental.DataAccess.Abstract.Persons;
 /// <summary>
 /// Define las operaciones en BD para personas
 /// </summary>
-public interface PersonRepository : IRepository
+public interface IPersonRepository : IRepository
 {
     /// <summary>
     /// Crea un usuario en BD
@@ -41,7 +41,7 @@ public interface PersonRepository : IRepository
     /// <typeparam name="P">Tipo de persona a obtener</typeparam>
     /// <param name="id">Identificador de la persona</param>
     /// <returns>Persona solicitada de existir en BD, de lo contrario<see langword="null"></returns>
-    P? GetPerson<P>(Guid id) where P : Person;
+    Person GetPerson(Guid id);
 
     /// <summary>
     /// Obtiene todas las personas de base de datos

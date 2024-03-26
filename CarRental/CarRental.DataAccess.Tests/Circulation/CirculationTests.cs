@@ -35,7 +35,6 @@ namespace CarRental.DataAccess.Tests.Circulation
             //Assert
 
         }
-
         [DataRow(1)]
         [TestMethod]
         public void Can_Get_Circulation(Guid id)

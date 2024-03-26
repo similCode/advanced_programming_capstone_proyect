@@ -17,7 +17,7 @@ public class Price : Entity
     /// <summary>
     /// Divisa a en la que se expresa el valor del automóvil.
     /// </summary>
-    public MoneyType Currency { get; }
+    public MoneyType Currency { get; set; }
 
     /// <summary>
     /// Valor del precio.

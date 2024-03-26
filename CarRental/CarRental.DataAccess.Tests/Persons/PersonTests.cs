@@ -56,9 +56,7 @@ namespace CarRental.DataAccess.Tests.Persons
             Assert.IsNotNull(loadedPerson);
 
             //Execute
-            loadedPerson.
-                loadedPerson.
-                loadedPerson.
+            //TODO:btibti43u
 
 
             //Assert

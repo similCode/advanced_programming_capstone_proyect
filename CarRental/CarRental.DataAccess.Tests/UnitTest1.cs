@@ -1,3 +1,5 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace CarRental.DataAccess.Tests
 {
     [TestClass]
