@@ -32,7 +32,7 @@ namespace CarRental.DataAccess.Abstract.Circulations
         /// <param name="expeditionDate">Fecha de emision</param>
         /// <param name="vin"></param>
         /// <returns></returns>
-        Circulation CreateCirculation(string brandName, string model, DateTime fabricationDate, string plate, string motorNumber, Color color, Insurance insurance, Somaton somaton, DateTime expirationDate, DateTime expeditionDate, string vin);
+        Circulation CreateCirculation( string model, string plate, string motorNumber,  Insurance insurance, Somaton somaton);
 
         /// <summary>
         /// Obtiene una circulacion de BD

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CarRental.DataAccess.Abstract.Circulations;
+using CarRental.DataAccess.Abstract.Insurances;
+using CarRental.DataAccess.Abstract.Somatons;
 using CarRental.DataAccess.Repositories;
 using CarRental.DataAccess.Tests.Utilities;
 using CarRental.Domain.Entities.Insurances;
@@ -22,17 +24,31 @@ namespace CarRental.DataAccess.Tests.Circulation
         {
             _circulationRepository = new ApplicationRepository(ConnectionStringProvider.GetConnectionString());
         }
-
+        [DataRow()]
         [TestMethod]
-        public void Can_Create_Circulation()
+        public void Can_Create_Circulation(string model, string plate, string motorNumber, Guid insuranceId, Guid somatonId)
         {
             //Arrange
             _circulationRepository.BeginTransaction();
+            Insurance? insurance = ((IInsuranceRepository)_circulationRepository).GetInsurance(insuranceId);
+            Assert.IsNotNull(insurance);
+            Somaton? somaton = ((ISomatonRepository)_circulationRepository).GetSomaton(somatonId);
+            Assert.IsNotNull(somaton);
+
 
             //Execute
+            var circulationDB = _circulationRepository.CreateCirculation(model, plate, motorNumber, insurance, somaton);
+            _circulationRepository.PartialCommit();
+            var loadedCirculation = _circulationRepository.GetCirculation(circulationDB.Id);
             _circulationRepository.CommitTransaction();
 
             //Assert
+            Assert.IsNotNull(loadedCirculation);
+            Assert.AreEqual(circulationDB.Model, loadedCirculation.Model);
+            Assert.AreEqual(circulationDB.Plate, loadedCirculation.Plate);
+            Assert.AreEqual(circulationDB.MotorNumber, loadedCirculation.MotorNumber);
+            Assert.AreEqual(circulationDB.InsuranceID, loadedCirculation.InsuranceID);
+            Assert.AreEqual(circulationDB.SomatonId, loadedCirculation.SomatonId);
         }
         [DataRow(1)]
         [TestMethod]

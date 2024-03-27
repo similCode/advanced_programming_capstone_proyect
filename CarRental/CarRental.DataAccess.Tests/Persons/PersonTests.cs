@@ -2,6 +2,7 @@
 using CarRental.DataAccess.Abstract.Persons;
 using CarRental.DataAccess.Repositories;
 using CarRental.DataAccess.Tests.Utilities;
+using CarRental.Domain.Entities.Persons;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using System;
@@ -41,7 +42,7 @@ namespace CarRental.DataAccess.Tests.Persons
             _personRepository.BeginTransaction();
 
             //Execute
-            var loadedPerson = _personRepository.GetPerson(id);
+            var loadedPerson = _personRepository.GetPerson<Person>(id);
             _personRepository.CommitTransaction();
 
             //Assert
@@ -53,7 +54,7 @@ namespace CarRental.DataAccess.Tests.Persons
         {
             //Arrange
             _personRepository.BeginTransaction();
-            var loadedPerson = _personRepository.GetPerson(id);
+            var loadedPerson = _personRepository.GetPerson<Person>(id);
             Assert.IsNotNull(loadedPerson);
 
             //Execute
@@ -71,11 +72,11 @@ namespace CarRental.DataAccess.Tests.Persons
             _personRepository.BeginTransaction();
 
             //Execute
-            var loadedPerson = _personRepository.GetPerson(id);
+            var loadedPerson = _personRepository.GetPerson<Person>(id);
             Assert.IsNotNull(loadedPerson);
             _personRepository.DeletePerson(loadedPerson);
             _personRepository.PartialCommit();
-            loadedPerson = _personRepository.GetPerson(id);
+            loadedPerson = _personRepository.GetPerson<Person>(id);
             _personRepository.CommitTransaction();
 
             //Assert

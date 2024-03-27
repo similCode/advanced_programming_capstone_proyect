@@ -1,6 +1,7 @@
 ﻿using CarRental.DataAccess.Abstract.Vehicles;
 using CarRental.DataAccess.Repositories;
 using CarRental.DataAccess.Tests.Utilities;
+using CarRental.Domain.Entities.Vehicles;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace CarRental.DataAccess.Tests.Vehicles
             _vehicleRepository.BeginTransaction();
 
             //Execute
-            var loadedVehicle = _vehicleRepository.GetVehicle(id);
+            var loadedVehicle = _vehicleRepository.GetVehicle<Vehicle>(id);
             _vehicleRepository.CommitTransaction();
 
             //Assert
@@ -69,11 +70,11 @@ namespace CarRental.DataAccess.Tests.Vehicles
             _vehicleRepository.BeginTransaction();
 
             //Execute
-            var loadedVehicle = _vehicleRepository.GetVehicle(id);
+            var loadedVehicle = _vehicleRepository.GetVehicle<Vehicle>(id);
             Assert.IsNotNull(loadedVehicle);
             _vehicleRepository.DeleteVehicle(loadedVehicle);
             _vehicleRepository.PartialCommit();
-            loadedVehicle = _vehicleRepository.GetVehicle(id);
+            loadedVehicle = _vehicleRepository.GetVehicle<Vehicle>(id);
             _vehicleRepository.CommitTransaction();
 
             //Assert
